@@ -1,5 +1,4 @@
-import { Schema, mongo, Mongoose } from "mongoose";
-
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const UnlockedFeature = new Schema({

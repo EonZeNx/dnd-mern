@@ -1,14 +1,12 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-
-const featureSchema = new Schema({
+const magic_schoolSchema = new Schema({
     name: {type: String, required: true, trim: true, minlength: 2},
     description: {type: [String], required: true},
     url: {type: String}
 });
 
-const Feature = mongoose.model('Feature', featureSchema);
+const Magic_School = mongoose.model('Magic_School', magic_schoolSchema);
 
-
-module.exports = Feature;
+module.exports = Magic_School;
